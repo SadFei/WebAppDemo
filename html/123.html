@@ -9,22 +9,16 @@
     
     alert('start');
     
-    window.onload = function () {
-            alert('3123');
-            show();
-        };
-        function show() {
-            let index = xmd(9);
-            document.getElementById("aid_0"+(index+1)).style.visibility = 'visible';
-        }
+
+    let index = xmd(9);
+     document.getElementById("aid_0"+(index+1)).style.visibility = 'visible';
+
 
         function xmd(max) {
             let min = 0;
             let num = parseInt((max - min + 1) * Math.random() + min);
             return num;
         }
-    
-    alert('end');
     
 </script>
 <body>
